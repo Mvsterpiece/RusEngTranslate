@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RusEngTranslate", "RusEngTranslate.pyproj", "{04A35377-B6E9-48B8-AA8F-DB52B85F5536}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04A35377-B6E9-48B8-AA8F-DB52B85F5536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A35377-B6E9-48B8-AA8F-DB52B85F5536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE22FFE3-A96E-4746-83BE-22179FA95BE8}
+	EndGlobalSection
+EndGlobal
