@@ -1,9 +1,19 @@
-rus=[]
-eng=[]
-rus=rus_lug("rus.txt",rus)
-print(rus)
-eng=eng_lug("eng.txt", eng)
-prunt(eng)
+from module1 import*
+rus_list=[]
+eng_list=[]
+rus_list=failist_lugemine("rus.txt",rus_list)
+eng_list=failist_lugemine("eng.txt",eng_list)
 
-print("Добро пожаловать в словарик")
-a=input("Вы хотите воспользоваться словариком? Да-1, Нет-0\n")
+while True:
+	menu=input("Kõik sõnad -S, \nTõlkida -T, \nUus sõna -U, \nViga -V, \nKontroll -K, \nLõpp -L \n")
+	if menu.upper()=="U":
+		rus=uus_sona("rus.txt", input("Новое слово: "))
+		eng=uus_sona("eng.txt", input("New word: "))
+	elif menu.upper()=="S":
+		print(rus_list)
+		print(eng_list)
+	elif menu.upper()=="T":
+		tolkimine(rus_list,eng_list)
+	elif menu.upper()=="L":
+		print("Хорошо, тикаем")
+		break
