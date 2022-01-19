@@ -24,7 +24,7 @@ while True:
 			mas=rus_list
 			lang="ru"
 		else:
-			mas=est_list
+			mas=eng_list
 			lang="eng"
 		for sona in mas:
 			sonad=sonad+" "+sona
