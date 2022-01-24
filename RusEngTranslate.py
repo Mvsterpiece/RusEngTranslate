@@ -17,6 +17,8 @@ while True:
 	elif menu.upper()=="L":
 		print("Хорошо, тикаем")
 		break
+	elif menu.upper()=="K":
+		
 	elif menu.upper()=="R":
 		keel=input("Mis keels ütelda?")
 		sonad=""
