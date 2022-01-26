@@ -74,16 +74,34 @@ def failist(mas:list,file:str):
 		f.write(sona+"\n")
 	fail.close()
 
-import os
-from gtts import gTTS
-def heli(text:str,keel:str):
-	obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
-	os.system("heli.mp3")
-
+#import os
+#from gtts import gTTS
+#def heli(text:str,keel:str):
+#	obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
+#	#os.system("heli.mp3")
+import random
 def kontroll(l1:list,l2:list):
-	"""
-
-	"""
-	l3=[]
 	result=0
-	
+	l3=[]
+	l3.extend(l1)
+	l3.extend(l2)
+	random.shuffle(l3)
+	print("Random list ",l3)
+	for i in range(len(l1)):
+		answer=input(f"Переведи данное слово - '{l3[i]}': ")
+		if answer in l1 or answer in l2:
+			if l3[i] in l1:
+				if l1.index(l3[i])==l2.index(answer):
+					result+=1
+					print("Правильно!")
+					print()
+			elif l3[i] in l2:
+				if l2.index(l3[i])==l1.index(answer):
+					result+=1
+					print("Правильно!")
+					print()
+		else:
+			print("Неправильно!")
+			print()
+	resultPercent=(round(result/len(l1))*100)
+	print(f"Ваш результат: {resultPercent}%")

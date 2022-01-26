@@ -13,23 +13,23 @@ while True:
 		print(rus_list)
 		print(eng_list)
 	elif menu.upper()=="T":
-		tolkimine(rus_list,eng_list)
+		tolkimine(eng_list,rus_list)
 	elif menu.upper()=="L":
 		print("Хорошо, тикаем")
 		break
 	elif menu.upper()=="K":
-		
-	elif menu.upper()=="R":
-		keel=input("Mis keels ütelda?")
-		sonad=""
-		if keel=="ru":
-			mas=rus_list
-			lang="ru"
-		else:
-			mas=eng_list
-			lang="eng"
-		for sona in mas:
-			sonad=sonad+" "+sona
-		heli(sonad,lang)
-	else:
+		kontroll(eng_list,rus_list)
+	#elif menu.upper()=="R":
+	#keel=input("Mis keels ütelda?")
+	#	sonad=""
+	#	if keel=="ru":
+	#		mas=rus_list
+	#		lang="ru"
+	#	else:
+	#		mas=eng_list
+	#		lang="eng"
+	#	for sona in mas:
+	#		sonad=sonad+" "+sona
+	#	heli(sonad,lang)
+	#else:
 		break
