@@ -80,7 +80,10 @@ def heli(text:str,keel:str):
 	obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
 	os.system("heli.mp3")
 
-def kontroll()
+def kontroll(l1:list,l2:list):
 	"""
 
 	"""
+	l3=[]
+	result=0
+	
